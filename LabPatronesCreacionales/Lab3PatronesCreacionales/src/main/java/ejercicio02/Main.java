@@ -1,15 +1,19 @@
 package inicial.ejercicio02;
 
+import ejercicio02.Boton;
+import factories.FabricaWindows;
+
+
 public class Main {
     public static void main(String[] args) {
         String sistemaOperativo = "Windows";
 
         if (sistemaOperativo.equals("Windows")) {
-            BotonWindows boton = new BotonWindows();
-            boton.render();
+            Boton botonw = new BotonWindows();
+            botonw.render();
         } else if (sistemaOperativo.equals("Mac")) {
-            BotonMac boton = new BotonMac();
-            boton.render();
+            Boton botonM = new BotonMac();
+            botonM.render();
         }
     }
 }
